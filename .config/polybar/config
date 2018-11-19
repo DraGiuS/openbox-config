@@ -30,6 +30,7 @@ margin-bottom = 0
 
 # //////////////////////////////////////
 [bar/top]
+# xrandr -q | grep " connected" | cut -d ' ' -f1
 #monitor = ${env:MONITOR:VGA-1}
 monitor = ${env:MONITOR:monitor-fallback}
 monitor-fallback = VGA-1
