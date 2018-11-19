@@ -10,6 +10,7 @@ compton -b --config ~/.config/compton.conf &
 numlockx &
 setxkbmap -layout us,ru -option "grp:alt_shift_toggle,grp_led:scroll" &
 # setxkbmap -layout us,ru -option "grp:win_space_toggle,grp_led:scroll" &
+dunst -config $HOME/.config/dunst/dunstrc &
 /usr/lib/xfce-polkit/xfce-polkit &
 xfce4-power-manager &
 mpd &

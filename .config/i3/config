@@ -260,21 +260,25 @@ exec --no-startup-id "numlockx"
 exec --no-startup-id "compton -b --config ~/.config/compton.conf"
 #exec --no-startup-id "setxkbmap -layout us,ru -option 'grp:win_space_toggle,grp_led:scroll'"
 exec --no-startup-id "setxkbmap -layout us,ru -option 'grp:alt_shift_toggle,grp_led:scroll'"
-exec_always --no-startup-id "mpd"
 exec --no-startup-id "thunar --daemon"
+exec --no-startup-id "pulseaudio --start"
+exec_always --no-startup-id "mpd"
 #exec --no-startup-id "xfsettingsd"
 exec --no-startup-id "/usr/lib/xfce-polkit/xfce-polkit"
-# keyring for storing saved passwords
+
+##### keyring for storing saved passwords
 # exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
-exec --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc"
+exec --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc" 
+
 ##### Start bar  
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 # exec_always --no-startup-id tint2
+
 exec_always --no-startup-id jgmenu_run start
-exec --no-startup-id "pulseaudio --start"
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id clipit
 exec --no-startup-id xfce4-power-manager
+
 #exec --no-startup-id megasync
 #exec --no-startup-id caffeine
