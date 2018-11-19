@@ -199,7 +199,7 @@ for_window [class="(?i)nitrogen|engrampa|flameshot|fsearch|qt5ct"] floating enab
 for_window [class="(?i)atril|pavucontrol|lxappearance|viewnior|keepassxc|veracrypt"] floating enable
 for_window [class="(?i)mpv"] floating enable, resize set 350 250, sticky enable, move window to position 1000 85
 # for_window [title="(?i)htop"] floating enable, resize set 1280 600, move position center, focus
-for_window [class="(?i)firefox|xfce4-terminal|thunar|subl3|mupdf"] focus
+for_window [class="(?i)firefox|xfce4-terminal|thunar|subl3|mousepad|mupdf"] focus
 for_window [window_role="demo"] move window to scratchpad, scratchpad show, floating enable, border pixel 0, resize set 1366 250, move absolute position 0 518
 for_window [class="(?i)demo"] move window to scratchpad, scratchpad show, floating enable, border pixel 0, resize set 1366 350, move absolute position 0 418
 
@@ -214,17 +214,17 @@ for_window [title="floating"] move window to scratchpad, scratchpad show, floati
 ## Specific workspaces
 assign [title="(?i)term-tiling"] $ws1
 assign [title="htop"] $ws1
-assign [class="(?i)firefox"] $ws2
-assign [class="(?i)subl3"] $ws3
+assign [class="(?i)firefox|chromium"] $ws2
+assign [class="(?i)mousepad|subl3"] $ws3
 assign [class="(?i)smplayer"] $ws4
 assign [window_role="gimp"] $ws5
 assign [class="(?i)fractal|telegram|discord"] $ws6
-assign [class="(?i)zathura|fbreader|mupdf"] $ws7
+assign [class="(?i)atril|evince|zathura|fbreader|mupdf"] $ws7
 assign [class="(?i)keepassxc|veracrypt"] $ws8
 assign [class="(?i)virtualbox"] $ws9
 
 
-# start app
+##### start app key bind
 # Update locker, run: betterlockscreen -u path/to/directory -r 1366x768 -b 0.5
 bindsym $mod1+l exec --no-startup-id "betterlockscreen -l dimblur"
 bindsym $mod1+space exec --no-startup-id "skippy-xd"
@@ -235,7 +235,8 @@ bindsym $mod1+t exec --no-startup-id "xfce4-terminal --title floating"
 bindsym $mod1+r exec --no-startup-id "xfce4-terminal --title float -e ranger"
 bindsym $mod1+h exec --no-startup-id "xfce4-terminal --title float -e htop"
 bindsym $mod1+f exec --no-startup-id "$HOME/.bin/findapp thunar"
-bindsym $mod1+s exec --no-startup-id "subl3"
+# bindsym $mod1+s exec --no-startup-id "subl3"
+bindsym $mod1+e exec --no-startup-id "mousepad"
 bindsym $mod1+w exec --no-startup-id "firefox"
 bindsym $mod+w exec --no-startup-id "$HOME/.bin/i3_switch_workspace.sh"
 bindsym Print exec --no-startup-id "scrot 'scrot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~/Pictures/screen ; viewnior ~/Pictures/screen/$f'"
@@ -255,6 +256,7 @@ exec_always --no-startup-id "nitrogen --restore"
 # gifsicle --resize 1366x768 wl7.gif -o bg.gif
 # exec_always --no-startup-id "xwinwrap -ov -ni -fs -- gifview -w WID ~/.wall/bg.gif -a"
 # exec_always --no-startup-id "xwinwrap -ov -ni -fs -- mpv -wid WID --keepaspect=no --loop ~/.wall/wl7.gif"
+
 exec --no-startup-id "numlockx"
 #exec --no-startup-id "compton -b --paint-on-overlay --unredir-if-possible --backend xr_glx_hybrid --vsync drm --glx-swap-method -1 --glx-no-stencil"
 exec --no-startup-id "compton -b --config ~/.config/compton.conf"
@@ -267,14 +269,14 @@ exec_always --no-startup-id "mpd"
 exec --no-startup-id "/usr/lib/xfce-polkit/xfce-polkit"
 
 ##### keyring for storing saved passwords
-# exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
-exec --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc" 
+exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
 
 ##### Start bar  
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 # exec_always --no-startup-id tint2
 
-exec_always --no-startup-id jgmenu_run start
+exec_always --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc"
+exec_always --no-startup-id "jgmenu_run start"
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id clipit
