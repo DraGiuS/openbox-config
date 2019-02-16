@@ -1,0 +1,20 @@
+# Maintainer: Alex Creio <ctlos@protonmail.com>
+pkgname=openbox-config
+destname="/etc/skel/.config/"
+pkgver=2.1.2
+pkgrel=1
+pkgdesc="Configuration files for Ctlos Openbox"
+arch=('any')
+url="https://github.com/ctlos/openbox-config"
+license=('GPL3')
+makedepends=('git')
+depends=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+source=(${pkgname}::"git+https://github.com/ctlos/${pkgname}.git")
+sha256sums=('SKIP')
+install='readme.install'
+package() {
+	mkdir -p "${pkgdir}${destname}"
+	cp -r "${srcdir}/${pkgname}/.config/"* "${pkgdir}${destname}"
+}
