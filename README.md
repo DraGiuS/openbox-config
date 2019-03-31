@@ -14,7 +14,7 @@ git clone https://github.com/creio/dots.git
 ```bash
 sudo pacman -S wget
 wget git.io/yay.sh && sh yay.sh
-yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton ttf-font-awesome polybar-git
+yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton ttf-font-awesome polybar-git oh-my-zsh-git
 ```
 
 В конфиге i3 закомментируйте лишние строки в автостарте, все из коробки работает с xfce4-terminal.
@@ -22,13 +22,11 @@ yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton ttf-font-awesome polybar-
 Установка плагинов для zsh.
 
 ```bash
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo git clone https://github.com/zdharma/fast-syntax-highlighting.git /usr/share/oh-my-zsh/custom/plugins/fast-syntax-highlighting
 
-git clone https://github.com/zdharma/fast-syntax-highlighting.git /usr/share/oh-my-zsh/custom/plugins/fast-syntax-highlighting
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-
-git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
 Изменяем шелл, на zsh.
