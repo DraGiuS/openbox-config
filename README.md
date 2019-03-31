@@ -13,7 +13,6 @@ git clone https://github.com/creio/dots.git
 Установим пакеты и пакетный менеджер `yay`.
 
 ```bash
-sudo pacman -S wget
 wget git.io/yay.sh && sh yay.sh
 yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton ttf-font-awesome polybar-git oh-my-zsh-git
 ```
