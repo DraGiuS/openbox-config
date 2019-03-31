@@ -14,7 +14,7 @@ git clone https://github.com/creio/dots.git
 
 ```bash
 wget git.io/yay.sh && sh yay.sh
-yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton ttf-font-awesome polybar-git oh-my-zsh-git
+yay -S i3-gaps rofi xfce4-terminal mpd ncmpcpp compton newsboat ttf-font-awesome polybar-git oh-my-zsh-git
 ```
 
 В конфиге i3 закомментируйте лишние строки в автостарте, все из коробки работает с xfce4-terminal.
@@ -32,3 +32,9 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/o
 Изменяем шелл, на zsh.
 
 `chsh -s /bin/zsh`
+
+Иконочный шрифт https://fontawesome.com/icons?d=gallery
+
+Принт иконки в терминале по юникоду.
+
+`echo -e "\uF209"`
