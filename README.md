@@ -35,6 +35,6 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/o
 
 Иконочный шрифт https://fontawesome.com/icons?d=gallery
 
-Принт иконки в терминале по юникоду.
+Принт иконки в терминале по юникоду, а лучше копируйте глиф с сайта.
 
 `echo -e "\uF209"`
