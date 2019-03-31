@@ -5,6 +5,7 @@
 Склонировать два репозитория и перенести нужные конфиги.
 
 ```bash
+sudo pacman -S wget git
 git clone https://github.com/ctlos/openbox-config.git
 git clone https://github.com/creio/dots.git
 ```
