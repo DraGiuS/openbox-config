@@ -24,3 +24,10 @@ obmenu-generator -p -i
 
 obmenu-generator -p -c
 ```
+
+Запыл упамянуть панелей tint2 можно стартовать несколько. С указанием пути к конфигу.
+
+```bash
+tint2 &
+tint2 -c ~/.config/tint2/pager.tint2rc &
+```
