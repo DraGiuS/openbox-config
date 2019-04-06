@@ -14,7 +14,7 @@ git clone https://github.com/creio/dots.git
 
 ```bash
 wget git.io/yay.sh && sh yay.sh
-yay -S openbox obconf obmenu-generator obkey-git lxappearance-obconf tint2 nitrogen wmctrl compton papirus-icon-theme
+yay -S openbox obconf obmenu-generator obkey-git lxappearance-obconf tint2 nitrogen xfce4-terminal thunar mousepad wmctrl compton papirus-icon-theme
 ```
 
 Генерация меню с иконками и без.
