@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Ctlos-Dark</name>
+    <name>Nord-Material</name>
     <cornerRadius>4</cornerRadius>
     <cornerRadius menu="yes">4</cornerRadius>
     <titleLayout>IMC</titleLayout>
