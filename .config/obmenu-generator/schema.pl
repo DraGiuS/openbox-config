@@ -32,10 +32,10 @@ our $SCHEMA = [
     {sep => 'CTLOS'},
 
     #          COMMAND                 LABEL              ICON
-    {item => ['xdg-open .',       'Файловый Менеджер', 'system-file-manager']},
-    {item => ['xfce4-terminal',            'Терминал',     'utilities-terminal']},
-    {item => ['xdg-open http://', 'Браузер',  'web-browser']},
-    {item => ['rofi -show drun',            'Лаунчер',  'system-run']},
+    {item => ['xdg-open .',       'Файловый Менеджер',  'system-file-manager']},
+    {item => ['xfce4-terminal',   'Терминал',           'utilities-terminal']},
+    {item => ['xdg-open http://', 'Браузер',            'web-browser']},
+    {item => ['rofi -show drun',  'Лаунчер',            'system-run']},
 
     {sep => 'Категории'},
 

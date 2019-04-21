@@ -43,7 +43,7 @@
     <name>Nord-Material</name>
     <cornerRadius>4</cornerRadius>
     <cornerRadius menu="yes">4</cornerRadius>
-    <titleLayout>IMC</titleLayout>
+    <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -76,7 +76,7 @@
     </font>
     <font place="MenuHeader">
       <name>Clear Sans Medium, Medium</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +85,7 @@
     </font>
     <font place="MenuItem">
       <name>Clear Sans Medium, Medium</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,7 +94,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Clear Sans Medium, Medium</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,7 +103,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Clear Sans Medium, Medium</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

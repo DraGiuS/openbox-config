@@ -15,6 +15,7 @@ dunst -config $HOME/.config/dunst/dunstrc &
 /usr/lib/xfce-polkit/xfce-polkit &
 xfce4-power-manager &
 mpd &
+gxkb &
 # (sleep 1; redshift-gtk) &
 clipit &
 nm-applet &
