@@ -159,7 +159,7 @@ exec = ~/.config/polybar/mails
 [module/app]
 type = custom/text
 
-content = 
+content = 
 content-foreground = ${colors.primary}
 
 #click-left = ulauncher
