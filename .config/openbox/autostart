@@ -1,5 +1,6 @@
 xsetroot -cursor_name left_ptr &
-nitrogen --restore &
+# nitrogen --restore &
+xfdesktop &
 tint2 &
 # tint2 -c ~/.config/tint2/pager.tint2rc &
 # conky &
@@ -20,4 +21,4 @@ gxkb &
 clipit &
 nm-applet &
 volumeicon &
-jgmenu_run start &
+# jgmenu_run start &
