@@ -1,6 +1,7 @@
 xsetroot -cursor_name left_ptr &
 # nitrogen --restore &
 xfdesktop &
+# sh ~/.config/polybar/launch.sh &
 tint2 &
 # tint2 -c ~/.config/tint2/pager.tint2rc &
 # conky &
