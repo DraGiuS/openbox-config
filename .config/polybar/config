@@ -113,6 +113,7 @@ exec = ~/.config/polybar/uparch.sh
 interval = 600
 format-prefix = " "
 format-prefix-foreground = ${colors.red}
+click-left = pamac-manager --updates
 
 
 
@@ -174,7 +175,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.primary}
 #click-left = ulauncher
-click-left = "xfdesktop --menu >/dev/null 2>&1 &"
+click-left = "jgmenu_run >/dev/null 2>&1 &"
 click-right = ~/.bin/rofi-favapp
 
 
@@ -258,7 +259,7 @@ label = %layout%
 type = custom/text
 content = 
 content-foreground = ${colors.primary}
-click-left = ~/.bin/rofi-logout
+click-left = oblogout
 content-margin-right = 0
 
 

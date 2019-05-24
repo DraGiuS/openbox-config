@@ -255,8 +255,7 @@ bindsym $mod+Ctrl+d exec mpc del 0
 ##### autostart app
 exec_always --no-startup-id "xrdb -load $HOME/.Xresources"
 exec_always --no-startup-id "xsetroot -cursor_name left_ptr"
-# exec_always --no-startup-id "nitrogen --restore"
-exec_always --no-startup-id "xfdesktop"
+exec_always --no-startup-id "nitrogen --restore"
 # gifsicle --resize 1366x768 wl7.gif -o bg.gif
 # exec_always --no-startup-id "xwinwrap -ov -ni -fs -- gifview -w WID ~/.wall/bg.gif -a"
 # exec_always --no-startup-id "xwinwrap -ov -ni -fs -- mpv -wid WID --keepaspect=no --loop ~/.wall/wl7.gif"

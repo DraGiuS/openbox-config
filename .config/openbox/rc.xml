@@ -196,12 +196,12 @@
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="W-d">
-      <action name="ToggleDecorations"/>
-    </keybind>
-    <keybind key="W-a">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="W-S-BackSpace">
+    <keybind key="W-a">
+      <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="W-A-r">
       <action name="Execute">
         <command>openbox --reconfigure</command>
       </action>
@@ -292,7 +292,7 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>jgmenu_run</command>
+        <command>search</command>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -397,9 +397,14 @@
         <command>scrot -d 5 'scrot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~ ; viewnior ~/$f'</command>
       </action>
     </keybind>
+    <keybind key="W-Print">
+      <action name="Execute">
+        <command>flameshot gui</command>
+      </action>
+    </keybind>
     <keybind key="A-d">
       <action name="Execute">
-        <command>rofi -show drun</command>
+        <command>rofi -show drun -show-icons -drun-icon-theme</command>
       </action>
     </keybind>
     <keybind key="W-w">
@@ -474,7 +479,22 @@
         <action name="Unshade"/>
       </mousebind>
       <mousebind action="Drag" button="W-Left">
-        <action name="Move"/>
+        <!-- <action name="Move"/> -->
+        <action name="if">
+          <maximized>no</maximized>
+          <then>
+            <action name="Move"/>
+          </then>
+          <else>
+            <action name="UnmaximizeFull"/>
+            <action name="Decorate"/>
+            <action name="Move"/>
+            <action name="MoveResizeTo">
+              <x>center</x>
+              <y>center</y>
+            </action>
+          </else>
+        </action>
       </mousebind>
       <mousebind action="Press" button="W-Right">
         <action name="Focus"/>

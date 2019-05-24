@@ -1,6 +1,5 @@
 xsetroot -cursor_name left_ptr &
-# nitrogen --restore &
-xfdesktop &
+nitrogen --restore &
 # sh ~/.config/polybar/launch.sh &
 tint2 &
 # tint2 -c ~/.config/tint2/pager.tint2rc &
@@ -22,4 +21,4 @@ gxkb &
 clipit &
 nm-applet &
 volumeicon &
-# jgmenu_run start &
+jgmenu_run start &
