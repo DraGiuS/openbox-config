@@ -214,7 +214,7 @@ for_window [title="floating"] move window to scratchpad, scratchpad show, floati
 ## Specific workspaces
 assign [title="(?i)term-tiling"] $ws1
 assign [title="htop"] $ws1
-assign [class="(?i)firefox|chromium"] $ws2
+assign [class="(?i)firefox"] $ws2
 assign [class="(?i)mousepad|subl3"] $ws3
 assign [class="(?i)smplayer"] $ws4
 assign [window_role="gimp"] $ws5
@@ -264,7 +264,7 @@ exec --no-startup-id "numlockx"
 #exec --no-startup-id "compton -b --paint-on-overlay --unredir-if-possible --backend xr_glx_hybrid --vsync drm --glx-swap-method -1 --glx-no-stencil"
 exec --no-startup-id "compton -b --config ~/.config/compton.conf"
 #exec --no-startup-id "setxkbmap -layout us,ru -option 'grp:win_space_toggle,grp_led:scroll'"
-exec --no-startup-id "setxkbmap -layout us,ru -option 'grp:alt_shift_toggle,grp_led:scroll'"
+exec --no-startup-id "setxkbmap -layout fr -option 'grp:alt_shift_toggle,grp_led:scroll'"
 exec --no-startup-id "thunar --daemon"
 exec --no-startup-id "pulseaudio --start"
 exec_always --no-startup-id "mpd"
