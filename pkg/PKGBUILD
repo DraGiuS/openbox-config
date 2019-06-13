@@ -1,17 +1,17 @@
 # Maintainer: Alex Creio <ctlos@protonmail.com>
-pkgname=openbox-config
+pkgname=yosh-config
 destname="/etc/skel/.config/"
 pkgver=2.2.1
 pkgrel=1
 pkgdesc="Configuration files for Ctlos Openbox"
 arch=('any')
-url="https://github.com/ctlos/openbox-config"
+url="https://github.com/Dragius/yosh-config"
 license=('GPL3')
 makedepends=('git')
 depends=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+https://github.com/ctlos/${pkgname}.git")
+source=(${pkgname}::"git+https://github.com/Dragius/${pkgname}.git")
 sha256sums=('SKIP')
 package() {
 	mkdir -p "${pkgdir}${destname}"
