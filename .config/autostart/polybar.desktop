@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=polybar
+Exec=sh -c '~/.config/polybar/i3cfg.sh'
+StartupNotify=false
+Terminal=false
