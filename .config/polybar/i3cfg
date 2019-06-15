@@ -40,7 +40,7 @@ offset-x = 0
 offset-y = 0
 fixed-center = true
 bottom = false
-locale = ru_RU.UTF-8
+locale = fr_FR.UTF-8
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -66,7 +66,7 @@ font-4 = "unifont:fontformat=truetype:size=8:antialias=false;1"
 
 
 modules-left = app web term rss cpu memory uparch mpd
-modules-center = i3
+modules-center = i3 title
 modules-right = fs tor alsa xkeyboard off
 
 cursor-click = pointer
@@ -229,7 +229,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.primary}
 #click-left = ulauncher
-click-left = "jgmenu_run >/dev/null 2>&1 &"
+click-left = rofi -show drun
 click-right = ~/.bin/rofi-favapp
 
 
@@ -313,7 +313,8 @@ label = %layout%
 type = custom/text
 content = 
 content-foreground = ${colors.primary}
-click-left = ~/.bin/i3-logout
+click-right = ~/.bin/i3-logout
+click-left = xfce4-session-logout
 content-margin-right = 0
 
 
