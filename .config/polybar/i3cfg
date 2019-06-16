@@ -65,7 +65,7 @@ font-3 = "Font Awesome 5 Brands:pixelsize=8;1"
 font-4 = "unifont:fontformat=truetype:size=8:antialias=false;1"
 
 
-modules-left = app web term rss cpu memory uparch mpd
+modules-left = app web term rss cpu memory météo spotify uparch mpd
 modules-center = i3 title
 modules-right = fs tor alsa xkeyboard off
 
@@ -158,7 +158,19 @@ format-foreground = ${colors.magenta}
 interval = 600
 label-font = 0
 
+[module/météo]
+type = custom/script
+exec = sh ~/scripts/météo.sh
+click-middle = sh ~/scripts/météo.sh
+label = %output%
+interval = 1800
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${xrdb:color6}
 
+[module/spotify]
+type = custom/script
+exec = sh ~/.config/polybar/spotify
+interval = 2
 
 [module/uparch]
 type = custom/script
